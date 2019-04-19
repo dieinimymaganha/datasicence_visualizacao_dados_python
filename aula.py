@@ -13,8 +13,10 @@ plt.title(titulo)
 plt.xlabel(eixox)
 plt.ylabel(eixoy)
 
-plt.scatter(x, y, label="Meus pontos", color="r")
-plt.plot(x, y)
+plt.scatter(x, y, label="Meus pontos", color="k", marker=".")
+plt.plot(x, y, color="#000000", linestyle="--")
 plt.legend()
 
-plt.show()
+plt.savefig("figura.png", dpi=1200)
+
+#plt.show()
